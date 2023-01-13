@@ -15,3 +15,7 @@
 .server.card.debug {
   padding: 5px;
 }
+
+.homepage {
+  background-image: url("/bg.png");
+}

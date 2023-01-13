@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default async function Home() {
   return (
-    <>
+    <div className="h-screen w-full homepage">
       <div className="text-center w-4/5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 server">
         <h1 className="text-5xl my-8">Expole food from around the world</h1>
         <Link
@@ -13,6 +13,6 @@ export default async function Home() {
           List of Cuisines
         </Link>
       </div>
-    </>
+    </div>
   );
 }

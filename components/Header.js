@@ -10,7 +10,7 @@ const Logo = () => {
   const recipeID = pathname.split("/")[2];
 
   return (
-    <div className="py-5 px-10 bg-slate-300 flex items-center justify-between client">
+    <div className="py-5 px-2 sm:px-10 bg-slate-300 flex items-center justify-between client">
       <div>
         <Link href="/">
           <h1 className="text-purple text-blue-700 font-bold text-5xl text-center">
@@ -21,7 +21,7 @@ const Logo = () => {
       {pathname && currentArea && (
         <div>
           <Link
-            className="bg-blue-500 text-white p-4 rounded font-bold"
+            className="bg-blue-500 text-white p-4 text-xs sm:text-lg rounded font-bold"
             href={recipeID ? `/recipes/${currentArea}` : "/recipes"}
           >
             Back to {recipeID ? `${currentArea} recipes` : "recipe types"}

@@ -6,7 +6,7 @@ const fetchRecipeAreas = async () => {
     "https://www.themealdb.com/api/json/v1/1/list.php?a=list"
   );
   const response = await res.json();
-  return response.meals.map((area) => area.strArea);
+  return response.meals.map((area) => area.strArea.toLowerCase());
 };
 
 const page = async () => {
@@ -17,7 +17,7 @@ const page = async () => {
         <Link
           prefetch={false}
           key={idx}
-          className="server shadow-gray-50 bg-gray-300 text-center rounded text-2xl py-10 cursor-pointer font-bold hover:bg-blue-500 hover:text-white"
+          className="server shadow-gray-50 bg-gray-300 capitalize text-center rounded text-2xl py-10 cursor-pointer font-bold hover:bg-blue-500 hover:text-white"
           href={`/recipes/${area}`}
         >
           {area}

@@ -26,10 +26,10 @@ export default async function RecipeListContainer({ params }) {
   return <RecipeList recipes={recipes} type={params.type || ""} />;
 }
 
-export async function generateStaticParams() {
-  const types = await fetchRecipeAreas();
+// export async function generateStaticParams() {
+//   const types = await fetchRecipeAreas();
 
-  return types.map((type) => ({
-    type: type,
-  }));
-}
+//   return types.map((type) => ({
+//     type: type,
+//   }));
+// }

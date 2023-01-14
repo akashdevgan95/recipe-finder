@@ -18,4 +18,5 @@
 
 .homepage {
   background-image: url("/bg.png");
+  background-size: cover;
 }

@@ -6,7 +6,7 @@ const fetchRecipeAreas = async () => {
     "https://www.themealdb.com/api/json/v1/1/list.php?a=list"
   );
   const response = await res.json();
-  return response.meals.map((area) => area.strArea.toLowerCase());
+  return response.meals.map((area) => area.strArea);
 };
 
 const page = async () => {

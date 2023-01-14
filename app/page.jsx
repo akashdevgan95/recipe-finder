@@ -8,7 +8,7 @@ export default async function Home() {
         <Link
           prefetch={false}
           className="shadow-gray-50 bg-gray-300 rounded text-xl py-2 px-4 cursor-pointer hover:bg-blue-500 hover:text-white"
-          href="/recipes"
+          href="/types"
         >
           List of Cuisines
         </Link>

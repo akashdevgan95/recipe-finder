@@ -18,7 +18,7 @@ const page = async () => {
           prefetch={false}
           key={idx}
           className="server shadow-gray-50 bg-gray-300 capitalize text-center rounded text-2xl py-10 cursor-pointer font-bold hover:bg-blue-500 hover:text-white"
-          href={`/recipes/${area}`}
+          href={`/types/${area}`}
         >
           {area}
         </Link>

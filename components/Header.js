@@ -22,7 +22,7 @@ const Logo = () => {
         <div>
           <Link
             className="bg-blue-500 text-white p-4 text-xs sm:text-lg rounded font-bold"
-            href={recipeID ? `/recipes/${currentArea}` : "/recipes"}
+            href={recipeID ? `/types/${currentArea}` : "/types"}
           >
             Back to {recipeID ? `${currentArea} recipes` : "recipe types"}
           </Link>

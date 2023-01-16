@@ -9,11 +9,11 @@ async function getRecipes(type = "indian") {
     `https://www.themealdb.com/api/json/v1/1/filter.php?a=${type}`
   );
   const response = await res.json();
-  return response.meals;
+  return response;
 }
 
 export default async function RecipeListContainer({ params }) {
   const recipes = await getRecipes(params.type);
 
-  return <RecipeList recipes={recipes} type={params.type || ""} />;
+  return <RecipeList recipes={recipes.meals} type={params.type || ""} />;
 }
